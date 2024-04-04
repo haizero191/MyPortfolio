@@ -1,0 +1,106 @@
+@import "../../assets/scss/commons.scss";
+
+.Home {
+  .title {
+    position: relative;
+    width: fit-content;
+    padding-bottom: 24px;
+
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    h1 {
+      text-transform: uppercase;
+      font-size: 44px;
+      font-weight: 500;
+      line-height: 55px;
+    }
+    p {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40%;
+      height: 4px;
+      background-color: black;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background-color: #ddd;
+    position: relative;
+    background-image: url("https://i.pinimg.com/564x/82/4d/9e/824d9e397b890e18dd9b92fb1cf9ee1d.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 14%;
+    .banner-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url("https://media3.giphy.com/media/FSqYDfsdaiG9W/giphy.gif?cid=6c09b952nefjj5op7ccmj6yryogh6p0ofgnly2vrw3djvykj&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g");
+      opacity: 0.1;
+      z-index: 2000;
+    }
+
+    .funny-text {
+      perspective: 100px;
+      position: absolute;
+      font-size: 20px;
+      transform: rotateX(22deg) rotateZ(1deg) rotateY(10deg) skewY(-180deg);
+      top: 55%;
+      left: 290px;
+      padding: 0px 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.905);
+    }
+    .sub-text {
+      width: 200px;
+      position: absolute;
+      bottom: 10px;
+      left: calc(50% - 100px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: #f7e28f;
+      text-transform: capitalize;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0px 14%;
+    }
+  }
+
+  .Project {
+    background: #ffffff;
+    position: relative;
+
+    h2 {
+      font-size: 26px;
+      padding: 80px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .board-grid-item {
+      .image {
+        width: 100%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+   
+  }
+}
