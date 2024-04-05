@@ -1,4 +1,9 @@
 @import "../../assets/scss/commons.scss";
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+
 
 .Home {
   .title {
@@ -28,7 +33,6 @@
       left: 0;
     }
   }
-
   .banner {
     width: 100%;
     height: 100vh;
@@ -119,15 +123,12 @@
       object-position: 0px 14%;
     }
   }
-
-
   .line {
     width: 100%;
     height: 1px;
     background-color: #ddd;
     margin: 0 auto;
   }
-
   .about {
     position: relative;
     padding: 100px 20px;
@@ -179,7 +180,6 @@
       }
     }
   }
-
   .skills {
     position: relative;
     padding: 100px 20px;
@@ -236,24 +236,38 @@
     background: #ffffff;
     position: relative;
     padding: 90px 0px;
+    overflow: hidden;
+
     .project-title {
-      width: fit-content;
+      width: 100%;
       margin: 0 auto;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+     
+      h2 {
+        font-size: 6.75rem;
+        text-transform: uppercase;
+        -webkit-text-stroke: 3px #1D2027;
+        -webkit-text-fill-color: #1D2027;
+        -webkit-animation: fill 0.5s infinite alternate;
+        color: black;
+        line-height: 6.5rem;
+        pointer-events: none;
+        user-select: none;
+      }
+  
+      h2:nth-child(2) {
+        -webkit-text-stroke: 3px #1D2027;
+        -webkit-text-fill-color: white;
+        -webkit-animation: fill 0.5s infinite alternate;
+        pointer-events: none;
+        user-select: none;
+      }
     }
-    h2 {
-      font-size: 6.75rem;
-      text-transform: uppercase;
-      -webkit-text-stroke: 3px #1D2027;
-      -webkit-text-fill-color: white;
-      -webkit-animation: fill 0.5s infinite alternate;
-      color: black;
-      line-height: 6.5rem;
-
-    }
-
-    h2:nth-child(2) {
-      -webkit-text-fill-color: #1D2027!important;
-    }
+  
 
     .board-grid {
       margin-top: 90px;
@@ -269,6 +283,5 @@
       }
     }
   }
-
 
 }

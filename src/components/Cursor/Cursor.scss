@@ -1,0 +1,13 @@
+.Cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  user-select: none;
+  border-radius: 50%;
+  z-index: 10000;
+  transition: 0.12s;
+  border: 2px solid rgba(0, 0, 0, 0.585);
+  cursor: none!important;
+
+}
