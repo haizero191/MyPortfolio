@@ -24,16 +24,17 @@ const Home = () => {
         <div className="banner">
           <div className="banner-overlay"></div>
           <div className="funny-text">
-            <div className="image">
+            <h2>ERROR !</h2>
+            {/* <div className="image">
               <img src={DINO} />
             </div>
             <h2 ref={textContainerRef}>No internet connection !</h2>
-            <p>Try: </p>
-            <ul>
+            <p>Try: </p> */}
+            {/* <ul>
               <li>Checking the network cables, modem and router.</li>
               <li>Restart your computer.</li>
               <li>Restart your computer again.</li>
-            </ul>
+            </ul> */}
           </div>
           <div className="sub-text">Nooooooo !</div>
         </div>
@@ -108,8 +109,9 @@ const Home = () => {
         {/* PROJECTS SECTION */}
         <div className="project">
           <div className="project-title">
-            <h2>creativity</h2>
             <h2>Design</h2>
+
+            <h2>Creative</h2>
           </div>
 
           <div className="board-grid">
@@ -202,8 +204,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-
-          <div className="blur"></div>
         </div>
       </div>
     </div>

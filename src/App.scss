@@ -15,6 +15,16 @@ html {
 .App {
     position: relative;
     font-family: "Poppins", sans-serif;
+    .cursor {
+        width: 80px;
+        height: 80px;
+        background-color: red;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        cursor: default;
+    }
     .App-layout {
         padding: map.get($header-size, "height") 0px;
         .App-header {
